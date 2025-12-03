@@ -2,6 +2,7 @@
 <manifest>
   <remote name="grapheneos" fetch="https://github.com/GrapheneOS/" revision="refs/heads/16-qpr1"/>
   <remote name="grapheneos-gitlab" fetch="https://gitlab.com/grapheneos/" revision="refs/heads/16-qpr1"/>
+  <remote name="benzene" fetch="https://github.com/BenzeneOS/"/>
   <remote name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/"/>
   <default revision="refs/tags/android-16.0.0_r3" remote="aosp" sync-j="4"/>
   <superproject name="platform/superproject" remote="aosp" revision="android-16.0.0_r3"/>
@@ -12,8 +13,14 @@
   <project path="bootable/libbootloader" name="platform/bootable/libbootloader" groups="vts,pdk"/>
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="grapheneos" aosp-name="platform/bootable/recovery"/>
   <project path="branding" name="branding" remote="grapheneos"/>
+  <project path="benzene-sdk" name="android_benzene-sdk" remote="benzene" revision="master"/>
+  <project path="benzene-build" name="benzene-build" remote="benzene" revision="master">
+    <linkfile src="shell.nix" dest="shell.nix"/>
+    <linkfile src="flake.lock" dest="flake.lock"/>
+    <linkfile src="graphene-env.nu" dest="graphene-env.nu"/>
+  </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed"/>
-  <project path="build/make" name="platform_build" groups="pdk,sysui-studio" remote="grapheneos" aosp-name="platform/build">
+  <project path="build/make" name="platform_build" groups="pdk,sysui-studio" remote="benzene" revision="16-qpr1-benzene" aosp-name="platform/build">
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
     <linkfile src="core" dest="build/core"/>
@@ -606,7 +613,7 @@
   <project path="external/zucchini" name="platform/external/zucchini" groups="pdk"/>
   <project path="external/zxing" name="platform/external/zxing" groups="pdk"/>
   <project path="frameworks/av" name="platform_frameworks_av" groups="pdk,sysui-studio" remote="grapheneos"/>
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="grapheneos" aosp-name="platform/frameworks/base"/>
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="benzene" revision="16-qpr1-benzene" aosp-name="platform/frameworks/base"/>
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk"/>
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk"/>
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk"/>
@@ -749,7 +756,7 @@
   <project path="packages/apps/SampleLocationAttribution" name="platform/packages/apps/SampleLocationAttribution" groups="pdk-fs"/>
   <project path="packages/apps/SecureElement" name="platform/packages/apps/SecureElement" groups="apps_se,pdk-fs,pdk-cw-fs"/>
   <project path="packages/apps/Seedvault" name="platform_packages_apps_Seedvault" remote="grapheneos"/>
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="grapheneos" aosp-name="platform/packages/apps/Settings"/>
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="benzene" revision="16-qpr1-benzene" aosp-name="platform/packages/apps/Settings"/>
   <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/SettingsIntelligence"/>
   <project path="packages/apps/SetupWizard2" name="platform_packages_apps_SetupWizard2" remote="grapheneos"/>
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs"/>
@@ -765,7 +772,7 @@
   <project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings" groups="pdk-fs,pdk-cw-tvc"/>
   <project path="packages/apps/TvSystemUI" name="platform/packages/apps/TvSystemUI" groups="pdk-fs"/>
   <project path="packages/apps/UniversalMediaPlayer" name="platform/packages/apps/UniversalMediaPlayer"/>
-  <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="grapheneos"/>
+  <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="benzene" revision="16-qpr1-benzene"/>
   <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="grapheneos" aosp-name="platform/packages/apps/WallpaperPicker2"/>
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/inputmethods/LatinIME"/>
   <project path="packages/inputmethods/LeanbackIME" name="platform/packages/inputmethods/LeanbackIME" groups="pdk-fs"/>
