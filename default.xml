@@ -34,13 +34,13 @@
     <linkfile src="root.bp" dest="Android.bp"/>
     <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
   </project>
-  <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs"/>
+  <!-- EXCLUDED FOR LITE: <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs"/> -->
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs"/>
-  <project path="developers/build" name="platform/developers/build" groups="developers,pdk"/>
-  <project path="developers/samples/android" name="platform/developers/samples/android" groups="developers"/>
-  <project path="development" name="platform_development" groups="developers,pdk-cw-fs,pdk-fs,sysui-studio" remote="grapheneos" aosp-name="platform/development"/>
-  <project path="device/amlogic/yukawa" name="device/amlogic/yukawa" groups="device,yukawa,pdk"/>
-  <project path="device/amlogic/yukawa-kernel" name="device/amlogic/yukawa-kernel" groups="device,yukawa,pdk" clone-depth="2"/>
+  <!-- EXCLUDED FOR LITE: <project path="developers/build" name="platform/developers/build" groups="developers,pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="developers/samples/android" name="platform/developers/samples/android" groups="developers"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="development" name="platform_development" groups="developers,pdk-cw-fs,pdk-fs,sysui-studio" remote="grapheneos" aosp-name="platform/development"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/amlogic/yukawa" name="device/amlogic/yukawa" groups="device,yukawa,pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/amlogic/yukawa-kernel" name="device/amlogic/yukawa-kernel" groups="device,yukawa,pdk" clone-depth="2"/> -->
   <project path="device/common" name="device_common" groups="pdk-cw-fs,pdk" remote="grapheneos" aosp-name="device/common"/>
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk"/>
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk"/>
@@ -52,25 +52,25 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk"/>
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk"/>
   <project path="device/google_car" name="device/google_car" groups="pdk"/>
-  <project path="device/google/akita-kernels/6.1" name="device_google_akita-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/bluejay-kernels/6.1" name="device_google_bluejay-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/caimito-kernels/6.1" name="device_google_caimito-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/comet-kernels/6.1" name="device_google_comet-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/cuttlefish" name="device/google/cuttlefish" groups="device,pdk"/>
-  <project path="device/google/cuttlefish_prebuilts" name="device/google/cuttlefish_prebuilts" groups="device,pdk" clone-depth="1"/>
-  <project path="device/google/cuttlefish_vmm" name="device/google/cuttlefish_vmm" groups="device,pdk" clone-depth="1"/>
-  <project path="device/google/felix-kernels/6.1" name="device_google_felix-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/laguna-kernels/6.6" name="device_google_laguna-kernels_6.6" remote="grapheneos"/>
-  <project path="device/google/lynx-kernels/6.1" name="device_google_lynx-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/pantah-kernels/6.1" name="device_google_pantah-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/raviole-kernels/6.1" name="device_google_raviole-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/shusky-kernels/6.1" name="device_google_shusky-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/tangorpro-kernels/6.1" name="device_google_tangorpro-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/tegu-kernels/6.1" name="device_google_tegu-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/linaro/dragonboard" name="device/linaro/dragonboard" groups="device,dragonboard,pdk"/>
-  <project path="device/linaro/dragonboard-kernel" name="device/linaro/dragonboard-kernel" groups="device,dragonboard,pdk" clone-depth="1"/>
-  <project path="device/linaro/hikey" name="device/linaro/hikey" groups="device,hikey,pdk"/>
-  <project path="device/linaro/hikey-kernel" name="device/linaro/hikey-kernel" groups="device,hikey,pdk" clone-depth="1"/>
+  <!-- EXCLUDED FOR LITE: <project path="device/google/akita-kernels/6.1" name="device_google_akita-kernels_6.1" remote="grapheneos" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/google/bluejay-kernels/6.1" name="device_google_bluejay-kernels_6.1" remote="grapheneos" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/google/caimito-kernels/6.1" name="device_google_caimito-kernels_6.1" remote="grapheneos" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/google/comet-kernels/6.1" name="device_google_comet-kernels_6.1" remote="grapheneos" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/google/cuttlefish" name="device/google/cuttlefish" groups="device,pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/google/cuttlefish_prebuilts" name="device/google/cuttlefish_prebuilts" groups="device,pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/google/cuttlefish_vmm" name="device/google/cuttlefish_vmm" groups="device,pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/google/felix-kernels/6.1" name="device_google_felix-kernels_6.1" remote="grapheneos" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/google/laguna-kernels/6.6" name="device_google_laguna-kernels_6.6" remote="grapheneos"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/google/lynx-kernels/6.1" name="device_google_lynx-kernels_6.1" remote="grapheneos" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/google/pantah-kernels/6.1" name="device_google_pantah-kernels_6.1" remote="grapheneos" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/google/raviole-kernels/6.1" name="device_google_raviole-kernels_6.1" remote="grapheneos" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/google/shusky-kernels/6.1" name="device_google_shusky-kernels_6.1" remote="grapheneos" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/google/tangorpro-kernels/6.1" name="device_google_tangorpro-kernels_6.1" remote="grapheneos" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/google/tegu-kernels/6.1" name="device_google_tegu-kernels_6.1" remote="grapheneos" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/linaro/dragonboard" name="device/linaro/dragonboard" groups="device,dragonboard,pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/linaro/dragonboard-kernel" name="device/linaro/dragonboard-kernel" groups="device,dragonboard,pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/linaro/hikey" name="device/linaro/hikey" groups="device,hikey,pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="device/linaro/hikey-kernel" name="device/linaro/hikey-kernel" groups="device,hikey,pdk" clone-depth="1"/> -->
   <project path="device/sample" name="device/sample" groups="pdk"/>
   <project path="external/aac" name="platform/external/aac" groups="pdk"/>
   <project path="external/abseil-cpp" name="platform/external/abseil-cpp" groups="pdk"/>
@@ -127,7 +127,7 @@
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk"/>
   <project path="external/chromium-web-tests" name="platform/external/chromium-web-tests" groups="pdk"/>
   <project path="external/chromiumos-config" name="platform/external/chromiumos-config" groups="pdk" clone-depth="1"/>
-  <project path="external/clang" name="platform/external/clang" groups="pdk"/>
+  <!-- EXCLUDED FOR LITE: <project path="external/clang" name="platform/external/clang" groups="pdk"/> -->
   <project path="external/cldr" name="platform/external/cldr" groups="pdk"/>
   <project path="external/clpeak" name="platform/external/clpeak" groups="pdk"/>
   <project path="external/clspv" name="platform/external/clspv" groups="pdk"/>
@@ -140,15 +140,15 @@
   <project path="external/coreboot" name="platform/external/coreboot" groups="pdk"/>
   <project path="external/cpu_features" name="platform/external/cpu_features" groups="pdk"/>
   <project path="external/cpuinfo" name="platform/external/cpuinfo" groups="pdk"/>
-  <project path="external/cronet" name="platform/external/cronet" groups="pdk"/>
+  <!-- EXCLUDED FOR LITE: <project path="external/cronet" name="platform/external/cronet" groups="pdk"/> -->
   <project path="external/crosvm" name="platform/external/crosvm" groups="pdk"/>
   <project path="external/curl" name="platform/external/curl" groups="pdk"/>
   <project path="external/dagger2" name="platform/external/dagger2" groups="pdk"/>
-  <project path="external/deqp" name="platform/external/deqp" groups="pdk-fs,pdk-cw-tvc" clone-depth="1"/>
-  <project path="external/deqp-deps/amber" name="platform/external/deqp-deps/amber" groups="pdk-fs,pdk-cw-tvc"/>
-  <project path="external/deqp-deps/glslang" name="platform/external/deqp-deps/glslang" groups="pdk-fs,pdk-cw-tvc"/>
-  <project path="external/deqp-deps/SPIRV-Headers" name="platform/external/deqp-deps/SPIRV-Headers" groups="pdk-fs,pdk-cw-tvc"/>
-  <project path="external/deqp-deps/SPIRV-Tools" name="platform/external/deqp-deps/SPIRV-Tools" groups="pdk-fs,pdk-cw-tvc"/>
+  <!-- EXCLUDED FOR LITE: <project path="external/deqp" name="platform/external/deqp" groups="pdk-fs,pdk-cw-tvc" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="external/deqp-deps/amber" name="platform/external/deqp-deps/amber" groups="pdk-fs,pdk-cw-tvc"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="external/deqp-deps/glslang" name="platform/external/deqp-deps/glslang" groups="pdk-fs,pdk-cw-tvc"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="external/deqp-deps/SPIRV-Headers" name="platform/external/deqp-deps/SPIRV-Headers" groups="pdk-fs,pdk-cw-tvc"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="external/deqp-deps/SPIRV-Tools" name="platform/external/deqp-deps/SPIRV-Tools" groups="pdk-fs,pdk-cw-tvc"/> -->
   <project path="external/dexmaker" name="platform/external/dexmaker" groups="pdk"/>
   <project path="external/dlmalloc" name="platform/external/dlmalloc" groups="pdk"/>
   <project path="external/dng_sdk" name="platform_external_dng_sdk" groups="pdk" remote="grapheneos"/>
@@ -208,7 +208,7 @@
   <project path="external/google-auth-library-java" name="platform/external/google-auth-library-java" groups="pdk,tradefed"/>
   <project path="external/google-benchmark" name="platform/external/google-benchmark" groups="pdk"/>
   <project path="external/google-breakpad" name="platform/external/google-breakpad" groups="pdk-cw-fs,pdk-fs"/>
-  <project path="external/google-cloud-java" name="platform/external/google-cloud-java" groups="pdk,tradefed"/>
+  <!-- EXCLUDED FOR LITE: <project path="external/google-cloud-java" name="platform/external/google-cloud-java" groups="pdk,tradefed"/> -->
   <project path="external/google-fonts/arbutus-slab" name="platform/external/google-fonts/arbutus-slab" groups="pdk"/>
   <project path="external/google-fonts/arvo" name="platform/external/google-fonts/arvo" groups="pdk"/>
   <project path="external/google-fonts/barlow" name="platform/external/google-fonts/barlow" groups="pdk"/>
@@ -246,7 +246,7 @@
   <project path="external/hyphenation-patterns" name="platform/external/hyphenation-patterns" groups="pdk"/>
   <project path="external/iamf_tools" name="platform/external/iamf_tools" groups="pdk"/>
   <project path="external/icing" name="platform/external/icing" groups="pdk"/>
-  <project path="external/icu" name="platform/external/icu" groups="pdk" clone-depth="1"/>
+  <!-- EXCLUDED FOR LITE: <project path="external/icu" name="platform/external/icu" groups="pdk" clone-depth="1"/> -->
   <project path="external/igt-gpu-tools" name="platform/external/igt-gpu-tools" groups="pdk"/>
   <project path="external/image_io" name="platform/external/image_io" groups="pdk"/>
   <project path="external/ims" name="platform/external/ims" groups="pdk"/>
@@ -298,7 +298,7 @@
   <project path="external/ksoap2" name="platform/external/ksoap2" groups="pdk"/>
   <project path="external/ksp" name="platform/external/ksp" groups="pdk"/>
   <project path="external/ktfmt" name="platform/external/ktfmt" groups="pdk,sysui-studio"/>
-  <project path="external/leakcanary2" name="platform/external/leakcanary2" groups="pdk"/>
+  <!-- EXCLUDED FOR LITE: <project path="external/leakcanary2" name="platform/external/leakcanary2" groups="pdk"/> -->
   <project path="external/leveldb" name="platform/external/leveldb" groups="pdk"/>
   <project path="external/libaom" name="platform/external/libaom" groups="pdk"/>
   <project path="external/libavc" name="platform/external/libavc" groups="pdk"/>
@@ -380,7 +380,7 @@
   <project path="external/marisa-trie" name="platform/external/marisa-trie" groups="pdk"/>
   <project path="external/mbedtls" name="platform/external/mbedtls" groups="pdk"/>
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk"/>
-  <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs"/>
+  <!-- EXCLUDED FOR LITE: <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs"/> -->
   <project path="external/Messaging" name="platform_external_Messaging" remote="grapheneos" clone-depth="1"/>
   <project path="external/mime-support" name="platform/external/mime-support" groups="pdk"/>
   <project path="external/minidns" name="platform/external/minidns" groups="pdk"/>
@@ -428,11 +428,11 @@
   <project path="external/OpenCL-CTS" name="platform/external/OpenCL-CTS" groups="pdk"/>
   <project path="external/OpenCL-Headers" name="platform/external/OpenCL-Headers" groups="pdk"/>
   <project path="external/OpenCL-ICD-Loader" name="platform/external/OpenCL-ICD-Loader" groups="pdk"/>
-  <project path="external/opencl/llvm-project" name="platform/external/opencl/llvm-project" groups="pdk"/>
+  <!-- EXCLUDED FOR LITE: <project path="external/opencl/llvm-project" name="platform/external/opencl/llvm-project" groups="pdk"/> -->
   <project path="external/OpenCSD" name="platform/external/OpenCSD" groups="pdk"/>
-  <project path="external/openscreen" name="platform/external/openscreen" groups="pdk"/>
-  <project path="external/openthread" name="platform/external/openthread" groups="pdk"/>
-  <project path="external/openwrt-prebuilts" name="platform/external/openwrt-prebuilts" groups="pdk" clone-depth="1"/>
+  <!-- EXCLUDED FOR LITE: <project path="external/openscreen" name="platform/external/openscreen" groups="pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="external/openthread" name="platform/external/openthread" groups="pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="external/openwrt-prebuilts" name="platform/external/openwrt-prebuilts" groups="pdk" clone-depth="1"/> -->
   <project path="external/opus-experimental" name="platform/external/opus-experimental" groups="pdk"/>
   <project path="external/ot-br-posix" name="platform/external/ot-br-posix" groups="pdk"/>
   <project path="external/ow2-asm" name="platform/external/ow2-asm" groups="pdk"/>
@@ -507,7 +507,7 @@
   <project path="external/roboto-flex-fonts" name="platform/external/roboto-flex-fonts" groups="pdk"/>
   <project path="external/roboto-fonts" name="platform/external/roboto-fonts" groups="pdk"/>
   <project path="external/rootdev" name="platform/external/rootdev" groups="pdk"/>
-  <project path="external/rust/android-crates-io" name="platform/external/rust/android-crates-io" groups="pdk"/>
+  <!-- EXCLUDED FOR LITE: <project path="external/rust/android-crates-io" name="platform/external/rust/android-crates-io" groups="pdk"/> -->
   <project path="external/rust/autocxx" name="platform/external/rust/autocxx" groups="pdk"/>
   <project path="external/rust/beto-rust" name="platform/external/rust/beto-rust" groups="pdk"/>
   <project path="external/rust/crabbyavif" name="platform/external/rust/crabbyavif" groups="pdk"/>
@@ -533,7 +533,7 @@
   <project path="external/sg3_utils" name="platform/external/sg3_utils" groups="pdk"/>
   <project path="external/shaderc/spirv-headers" name="platform/external/shaderc/spirv-headers" groups="pdk"/>
   <project path="external/shflags" name="platform/external/shflags" groups="pdk"/>
-  <project path="external/skia" name="platform_external_skia" groups="pdk,qcom_msm8x26" remote="grapheneos"/>
+  <!-- EXCLUDED FOR LITE: <project path="external/skia" name="platform_external_skia" groups="pdk,qcom_msm8x26" remote="grapheneos"/> -->
   <project path="external/sl4a" name="platform/external/sl4a" groups="pdk"/>
   <project path="external/slf4j" name="platform/external/slf4j" groups="pdk"/>
   <project path="external/snakeyaml" name="platform/external/snakeyaml" groups="pdk"/>
@@ -550,7 +550,7 @@
   <project path="external/strace" name="platform/external/strace" groups="pdk"/>
   <project path="external/stressapptest" name="platform/external/stressapptest" groups="pdk"/>
   <project path="external/subsampling-scale-image-view" name="platform/external/subsampling-scale-image-view" groups="pdk" clone-depth="1"/>
-  <project path="external/swiftshader" name="platform/external/swiftshader" groups="pdk" clone-depth="1"/>
+  <!-- EXCLUDED FOR LITE: <project path="external/swiftshader" name="platform/external/swiftshader" groups="pdk" clone-depth="1"/> -->
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk"/>
   <project path="external/talkback" name="platform_external_talkback" remote="grapheneos" clone-depth="1"/>
   <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk"/>
@@ -584,7 +584,7 @@
   <project path="external/uwb" name="platform/external/uwb" groups="pdk"/>
   <project path="external/v4l-utils" name="platform/external/v4l-utils" groups="pdk"/>
   <project path="external/v4l2_codec2" name="platform/external/v4l2_codec2" groups="pdk"/>
-  <project path="external/vanadium" name="platform_external_vanadium" remote="grapheneos-gitlab" clone-depth="1"/>
+  <!-- EXCLUDED FOR LITE: <project path="external/vanadium" name="platform_external_vanadium" remote="grapheneos-gitlab" clone-depth="1"/> -->
   <project path="external/vboot_reference" name="platform/external/vboot_reference" groups="pdk"/>
   <project path="external/virglrenderer" name="platform/external/virglrenderer" groups="pdk"/>
   <project path="external/virtio-media" name="platform/external/virtio-media" groups="pdk"/>
@@ -611,9 +611,9 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk"/>
   <project path="external/zstd" name="platform/external/zstd" groups="pdk"/>
   <project path="external/zucchini" name="platform/external/zucchini" groups="pdk"/>
-  <project path="external/zxing" name="platform/external/zxing" groups="pdk"/>
-  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk,sysui-studio" remote="grapheneos"/>
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="benzene" revision="16-qpr1-benzene" aosp-name="platform/frameworks/base"/>
+  <!-- EXCLUDED FOR LITE: <project path="external/zxing" name="platform/external/zxing" groups="pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="frameworks/av" name="platform_frameworks_av" groups="pdk,sysui-studio" remote="grapheneos"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="benzene" revision="16-qpr1-benzene" aosp-name="platform/frameworks/base"/> -->
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk"/>
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk"/>
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk"/>
@@ -671,24 +671,24 @@
   <project path="hardware/synaptics/wlan" name="platform/hardware/synaptics/wlan" groups="pdk"/>
   <project path="hardware/ti/am57x" name="platform/hardware/ti/am57x" groups="pdk"/>
   <project path="kernel/configs" name="kernel/configs" groups="vts,pdk"/>
-  <project path="kernel/prebuilts/6.1/arm64" name="kernel/prebuilts/6.1/arm64" groups="pdk" clone-depth="1"/>
-  <project path="kernel/prebuilts/6.1/x86_64" name="kernel/prebuilts/6.1/x86-64" groups="pdk" clone-depth="1"/>
-  <project path="kernel/prebuilts/6.12/arm64" name="kernel/prebuilts/6.12/arm64" groups="pdk" clone-depth="1"/>
-  <project path="kernel/prebuilts/6.12/x86_64" name="kernel/prebuilts/6.12/x86-64" groups="pdk" clone-depth="1"/>
-  <project path="kernel/prebuilts/6.6/arm64" name="kernel/prebuilts/6.6/arm64" groups="pdk" clone-depth="1"/>
-  <project path="kernel/prebuilts/6.6/x86_64" name="kernel/prebuilts/6.6/x86-64" groups="pdk" clone-depth="1"/>
-  <project path="kernel/prebuilts/common-modules/trusty/6.12/arm64" name="kernel/prebuilts/common-modules/trusty/6.12/arm64" groups="pdk" clone-depth="1"/>
-  <project path="kernel/prebuilts/common-modules/trusty/6.6/arm64" name="kernel/prebuilts/common-modules/trusty/6.6/arm64" groups="pdk" clone-depth="1"/>
-  <project path="kernel/prebuilts/common-modules/virtual-device/6.1/arm64" name="kernel/prebuilts/common-modules/virtual-device/6.1/arm64" groups="pdk" clone-depth="1"/>
-  <project path="kernel/prebuilts/common-modules/virtual-device/6.1/x86-64" name="kernel/prebuilts/common-modules/virtual-device/6.1/x86-64" groups="pdk" clone-depth="1"/>
-  <project path="kernel/prebuilts/common-modules/virtual-device/6.12/arm64" name="kernel/prebuilts/common-modules/virtual-device/6.12/arm64" groups="pdk" clone-depth="1"/>
-  <project path="kernel/prebuilts/common-modules/virtual-device/6.12/x86-64" name="kernel/prebuilts/common-modules/virtual-device/6.12/x86-64" groups="pdk" clone-depth="1"/>
-  <project path="kernel/prebuilts/common-modules/virtual-device/6.6/arm64" name="kernel/prebuilts/common-modules/virtual-device/6.6/arm64" groups="pdk" clone-depth="1"/>
-  <project path="kernel/prebuilts/common-modules/virtual-device/6.6/x86-64" name="kernel/prebuilts/common-modules/virtual-device/6.6/x86-64" groups="pdk" clone-depth="1"/>
-  <project path="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" name="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" groups="pdk" clone-depth="1"/>
-  <project path="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" name="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" groups="pdk" clone-depth="1"/>
-  <project path="kernel/prebuilts/mainline/arm64" name="kernel/prebuilts/mainline/arm64" groups="pdk" clone-depth="1"/>
-  <project path="kernel/prebuilts/mainline/x86_64" name="kernel/prebuilts/mainline/x86-64" groups="pdk" clone-depth="1"/>
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/6.1/arm64" name="kernel/prebuilts/6.1/arm64" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/6.1/x86_64" name="kernel/prebuilts/6.1/x86-64" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/6.12/arm64" name="kernel/prebuilts/6.12/arm64" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/6.12/x86_64" name="kernel/prebuilts/6.12/x86-64" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/6.6/arm64" name="kernel/prebuilts/6.6/arm64" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/6.6/x86_64" name="kernel/prebuilts/6.6/x86-64" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/common-modules/trusty/6.12/arm64" name="kernel/prebuilts/common-modules/trusty/6.12/arm64" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/common-modules/trusty/6.6/arm64" name="kernel/prebuilts/common-modules/trusty/6.6/arm64" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/common-modules/virtual-device/6.1/arm64" name="kernel/prebuilts/common-modules/virtual-device/6.1/arm64" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/common-modules/virtual-device/6.1/x86-64" name="kernel/prebuilts/common-modules/virtual-device/6.1/x86-64" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/common-modules/virtual-device/6.12/arm64" name="kernel/prebuilts/common-modules/virtual-device/6.12/arm64" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/common-modules/virtual-device/6.12/x86-64" name="kernel/prebuilts/common-modules/virtual-device/6.12/x86-64" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/common-modules/virtual-device/6.6/arm64" name="kernel/prebuilts/common-modules/virtual-device/6.6/arm64" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/common-modules/virtual-device/6.6/x86-64" name="kernel/prebuilts/common-modules/virtual-device/6.6/x86-64" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" name="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" name="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/mainline/arm64" name="kernel/prebuilts/mainline/arm64" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="kernel/prebuilts/mainline/x86_64" name="kernel/prebuilts/mainline/x86-64" groups="pdk" clone-depth="1"/> -->
   <project path="kernel/tests" name="kernel/tests" groups="vts,pdk"/>
   <project path="libcore" name="platform_libcore" groups="pdk" remote="grapheneos" aosp-name="platform/libcore"/>
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk"/>
@@ -725,11 +725,11 @@
   <project path="packages/apps/CarrierConfig2" name="platform_packages_apps_CarrierConfig2" groups="pdk-cw-fs,pdk-fs" remote="grapheneos"/>
   <project path="packages/apps/CellBroadcastReceiver" name="platform_packages_apps_CellBroadcastReceiver" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/CellBroadcastReceiver"/>
   <project path="packages/apps/CertInstaller" name="platform_packages_apps_CertInstaller" groups="pdk-cw-fs,pdk-fs" remote="grapheneos"/>
-  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/Contacts"/>
+  <!-- EXCLUDED FOR LITE: <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/Contacts"/> -->
   <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" groups="pdk-fs" remote="grapheneos"/>
   <project path="packages/apps/DevCamera" name="platform/packages/apps/DevCamera" groups="pdk"/>
   <project path="packages/apps/DeviceDiagnostics" name="platform/packages/apps/DeviceDiagnostics" groups="pdk"/>
-  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/Dialer"/>
+  <!-- EXCLUDED FOR LITE: <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/Dialer"/> -->
   <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/DocumentsUI"/>
   <project path="packages/apps/EmergencyInfo" name="platform_packages_apps_EmergencyInfo" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/EmergencyInfo"/>
   <project path="packages/apps/ExactCalculator" name="platform_packages_apps_ExactCalculator" remote="grapheneos"/>
@@ -739,7 +739,7 @@
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs"/>
   <project path="packages/apps/ImsServiceEntitlement" name="platform/packages/apps/ImsServiceEntitlement" groups="pdk-fs"/>
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs"/>
-  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="grapheneos" aosp-name="platform/packages/apps/Launcher3"/>
+  <!-- EXCLUDED FOR LITE: <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="grapheneos" aosp-name="platform/packages/apps/Launcher3"/> -->
   <project path="packages/apps/LogViewer" name="platform_packages_apps_LogViewer" groups="pdk-fs" remote="grapheneos"/>
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs"/>
   <project path="packages/apps/Multiuser" name="platform/packages/apps/Multiuser" groups="pdk-fs"/>
@@ -755,8 +755,8 @@
   <project path="packages/apps/SafetyRegulatoryInfo" name="platform/packages/apps/SafetyRegulatoryInfo" groups="pdk-fs"/>
   <project path="packages/apps/SampleLocationAttribution" name="platform/packages/apps/SampleLocationAttribution" groups="pdk-fs"/>
   <project path="packages/apps/SecureElement" name="platform/packages/apps/SecureElement" groups="apps_se,pdk-fs,pdk-cw-fs"/>
-  <project path="packages/apps/Seedvault" name="platform_packages_apps_Seedvault" remote="grapheneos"/>
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="benzene" revision="16-qpr1-benzene" aosp-name="platform/packages/apps/Settings"/>
+  <!-- EXCLUDED FOR LITE: <project path="packages/apps/Seedvault" name="platform_packages_apps_Seedvault" remote="grapheneos"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="benzene" revision="16-qpr1-benzene" aosp-name="platform/packages/apps/Settings"/> -->
   <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/SettingsIntelligence"/>
   <project path="packages/apps/SetupWizard2" name="platform_packages_apps_SetupWizard2" remote="grapheneos"/>
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs"/>
@@ -774,24 +774,24 @@
   <project path="packages/apps/UniversalMediaPlayer" name="platform/packages/apps/UniversalMediaPlayer"/>
   <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="benzene" revision="16-qpr1-benzene"/>
   <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="grapheneos" aosp-name="platform/packages/apps/WallpaperPicker2"/>
-  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/inputmethods/LatinIME"/>
+  <!-- EXCLUDED FOR LITE: <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/inputmethods/LatinIME"/> -->
   <project path="packages/inputmethods/LeanbackIME" name="platform/packages/inputmethods/LeanbackIME" groups="pdk-fs"/>
   <project path="packages/modules/adb" name="platform_packages_modules_adb" groups="pdk" remote="grapheneos" aosp-name="platform/packages/modules/adb"/>
-  <project path="packages/modules/AdServices" name="platform/packages/modules/AdServices" groups="pdk-cw-fs,pdk-fs,sysui-studio"/>
+  <!-- EXCLUDED FOR LITE: <project path="packages/modules/AdServices" name="platform/packages/modules/AdServices" groups="pdk-cw-fs,pdk-fs,sysui-studio"/> -->
   <project path="packages/modules/AppSearch" name="platform_packages_modules_AppSearch" groups="pdk" remote="grapheneos" aosp-name="platform/packages/modules/AppSearch"/>
   <project path="packages/modules/ArtPrebuilt" name="platform/packages/modules/ArtPrebuilt" groups="pdk" clone-depth="1"/>
-  <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" groups="pdk" remote="grapheneos" aosp-name="platform/packages/modules/Bluetooth"/>
+  <!-- EXCLUDED FOR LITE: <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" groups="pdk" remote="grapheneos" aosp-name="platform/packages/modules/Bluetooth"/> -->
   <project path="packages/modules/CaptivePortalLogin" name="platform/packages/modules/CaptivePortalLogin" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/modules/CellBroadcastService" name="platform/packages/modules/CellBroadcastService" groups="pdk"/>
   <project path="packages/modules/common" name="platform_packages_modules_common" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/modules/common"/>
   <project path="packages/modules/ConfigInfrastructure" name="platform_packages_modules_ConfigInfrastructure" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/modules/ConfigInfrastructure"/>
-  <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/modules/Connectivity"/>
+  <!-- EXCLUDED FOR LITE: <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/modules/Connectivity"/> -->
   <project path="packages/modules/CrashRecovery" name="platform/packages/modules/CrashRecovery" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/modules/desktop/Serviceability" name="platform/packages/modules/desktop/Serviceability" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/modules/DeviceLock" name="platform/packages/modules/DeviceLock" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/modules/DnsResolver" name="platform_packages_modules_DnsResolver" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/modules/DnsResolver"/>
   <project path="packages/modules/ExtServices" name="platform/packages/modules/ExtServices" groups="pdk-cw-fs,pdk-fs"/>
-  <project path="packages/modules/GeoTZ" name="platform/packages/modules/GeoTZ" groups="pdk-cw-fs,pdk-fs"/>
+  <!-- EXCLUDED FOR LITE: <project path="packages/modules/GeoTZ" name="platform/packages/modules/GeoTZ" groups="pdk-cw-fs,pdk-fs"/> -->
   <project path="packages/modules/Gki" name="platform/packages/modules/Gki" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/modules/HealthFitness" name="platform_packages_modules_HealthFitness" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/modules/HealthFitness"/>
   <project path="packages/modules/ImsMedia" name="platform/packages/modules/ImsMedia" groups="pdk"/>
@@ -800,7 +800,7 @@
   <project path="packages/modules/Media" name="platform/packages/modules/Media" groups="pdk"/>
   <project path="packages/modules/ModuleMetadata" name="platform/packages/modules/ModuleMetadata" groups="pdk"/>
   <project path="packages/modules/NetworkStack" name="platform_packages_modules_NetworkStack" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/modules/NetworkStack"/>
-  <project path="packages/modules/NeuralNetworks" name="platform/packages/modules/NeuralNetworks" groups="pdk-cw-fs,pdk-fs"/>
+  <!-- EXCLUDED FOR LITE: <project path="packages/modules/NeuralNetworks" name="platform/packages/modules/NeuralNetworks" groups="pdk-cw-fs,pdk-fs"/> -->
   <project path="packages/modules/Nfc" name="platform_packages_modules_Nfc" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/modules/Nfc"/>
   <project path="packages/modules/OnDevicePersonalization" name="platform/packages/modules/OnDevicePersonalization" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/modules/Permission" name="platform_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/modules/Permission"/>
@@ -815,17 +815,17 @@
   <project path="packages/modules/ThreadNetwork" name="platform/packages/modules/ThreadNetwork" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/modules/UprobeStats" name="platform/packages/modules/UprobeStats" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/modules/Uwb" name="platform_packages_modules_Uwb" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/modules/Uwb"/>
-  <project path="packages/modules/Virtualization" name="platform_packages_modules_Virtualization" groups="pdk" remote="grapheneos" aosp-name="platform/packages/modules/Virtualization"/>
+  <!-- EXCLUDED FOR LITE: <project path="packages/modules/Virtualization" name="platform_packages_modules_Virtualization" groups="pdk" remote="grapheneos" aosp-name="platform/packages/modules/Virtualization"/> -->
   <project path="packages/modules/vndk" name="platform/packages/modules/vndk" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="grapheneos" aosp-name="platform/packages/modules/Wifi"/>
   <project path="packages/providers/BlockedNumberProvider" name="platform/packages/providers/BlockedNumberProvider" groups="pdk-fs"/>
   <project path="packages/providers/BookmarkProvider" name="platform/packages/providers/BookmarkProvider" groups="pdk-fs"/>
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/providers/CallLogProvider" name="platform/packages/providers/CallLogProvider" groups="pdk-fs"/>
-  <project path="packages/providers/ContactsKeysProvider" name="platform/packages/providers/ContactsKeysProvider" groups="pdk-cw-fs,pdk-fs"/>
-  <project path="packages/providers/ContactsProvider" name="platform_packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/providers/ContactsProvider"/>
+  <!-- EXCLUDED FOR LITE: <project path="packages/providers/ContactsKeysProvider" name="platform/packages/providers/ContactsKeysProvider" groups="pdk-cw-fs,pdk-fs"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="packages/providers/ContactsProvider" name="platform_packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/providers/ContactsProvider"/> -->
   <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/providers/DownloadProvider"/>
-  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/providers/MediaProvider"/>
+  <!-- EXCLUDED FOR LITE: <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/providers/MediaProvider"/> -->
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" groups="pdk-fs"/>
   <project path="packages/providers/TelephonyProvider" name="platform_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/providers/TelephonyProvider"/>
   <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" groups="pdk-fs"/>
@@ -834,7 +834,7 @@
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" groups="pdk-fs"/>
   <project path="packages/services/AlternativeNetworkAccess" name="platform/packages/services/AlternativeNetworkAccess" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/services/BuiltInPrintService" name="platform/packages/services/BuiltInPrintService" groups="pdk-cw-fs,pdk-fs"/>
-  <project path="packages/services/Car" name="platform/packages/services/Car" groups="pdk-cw-fs,pdk-fs"/>
+  <!-- EXCLUDED FOR LITE: <project path="packages/services/Car" name="platform/packages/services/Car" groups="pdk-cw-fs,pdk-fs"/> -->
   <project path="packages/services/DeviceAsWebcam" name="platform/packages/services/DeviceAsWebcam" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/services/Iwlan" name="platform/packages/services/Iwlan" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/services/Mms" name="platform_packages_services_Mms" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/services/Mms"/>
@@ -844,69 +844,69 @@
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/services/Telephony"/>
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" groups="pdk-fs"/>
   <project path="pdk" name="platform/pdk" groups="pdk"/>
-  <project path="platform_testing" name="platform/platform_testing" groups="pdk-fs,pdk-cw-fs,cts,sysui-studio"/>
-  <project path="prebuilts/abi-dumps/ndk" name="platform/prebuilts/abi-dumps/ndk" groups="pdk-cw-fs,pdk-fs" clone-depth="1"/>
-  <project path="prebuilts/abi-dumps/platform" name="platform/prebuilts/abi-dumps/platform" groups="pdk-cw-fs,pdk-fs" clone-depth="1"/>
-  <project path="prebuilts/abi-dumps/vndk" name="platform/prebuilts/abi-dumps/vndk" groups="pdk-cw-fs,pdk-fs" clone-depth="1"/>
-  <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" clone-depth="1"/>
+  <!-- EXCLUDED FOR LITE: <project path="platform_testing" name="platform/platform_testing" groups="pdk-fs,pdk-cw-fs,cts,sysui-studio"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/abi-dumps/ndk" name="platform/prebuilts/abi-dumps/ndk" groups="pdk-cw-fs,pdk-fs" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/abi-dumps/platform" name="platform/prebuilts/abi-dumps/platform" groups="pdk-cw-fs,pdk-fs" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/abi-dumps/vndk" name="platform/prebuilts/abi-dumps/vndk" groups="pdk-cw-fs,pdk-fs" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" clone-depth="1"/> -->
   <project path="prebuilts/asuite" name="platform/prebuilts/asuite" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/bazel/common" name="platform/prebuilts/bazel/common" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="pdk,sysui-studio" clone-depth="1"/>
-  <project path="prebuilts/bundletool" name="platform/prebuilts/bundletool" groups="pdk" clone-depth="1"/>
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/bazel/common" name="platform/prebuilts/bazel/common" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="pdk,sysui-studio" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/bundletool" name="platform/prebuilts/bundletool" groups="pdk" clone-depth="1"/> -->
   <project path="prebuilts/checkcolor" name="platform/prebuilts/checkcolor" groups="pdk,sysui-studio" clone-depth="1"/>
   <project path="prebuilts/checkstyle" name="platform/prebuilts/checkstyle" groups="pdk,sysui-studio" clone-depth="1"/>
-  <project path="prebuilts/clang-tools" name="platform/prebuilts/clang-tools" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="pdk,sysui-studio" clone-depth="1"/>
-  <project path="prebuilts/cmake/linux-x86" name="platform/prebuilts/cmake/linux-x86" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/cmdline-tools" name="platform/prebuilts/cmdline-tools" groups="pdk-cw-fs,pdk-fs,sysui-studio" clone-depth="1"/>
-  <project path="prebuilts/devtools" name="platform/prebuilts/devtools" groups="pdk-fs" clone-depth="1"/>
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" groups="pdk,linux" clone-depth="1"/>
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" groups="pdk-cw-fs,pdk-fs" clone-depth="1"/>
-  <project path="prebuilts/go/linux-x86" name="platform/prebuilts/go/linux-x86" groups="linux,pdk,tradefed" clone-depth="1"/>
-  <project path="prebuilts/gradle-plugin" name="platform/prebuilts/gradle-plugin" groups="pdk,pdk-cw-fs,pdk-fs" clone-depth="1"/>
-  <project path="prebuilts/jdk/jdk21" name="platform/prebuilts/jdk/jdk21" groups="pdk,sysui-studio" clone-depth="1"/>
-  <project path="prebuilts/jdk/jdk8" name="platform/prebuilts/jdk/jdk8" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/ktlint" name="platform/prebuilts/ktlint" groups="pdk,sysui-studio" clone-depth="1"/>
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/clang-tools" name="platform/prebuilts/clang-tools" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="pdk,sysui-studio" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/cmake/linux-x86" name="platform/prebuilts/cmake/linux-x86" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/cmdline-tools" name="platform/prebuilts/cmdline-tools" groups="pdk-cw-fs,pdk-fs,sysui-studio" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/devtools" name="platform/prebuilts/devtools" groups="pdk-fs" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" groups="pdk,linux" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" groups="pdk-cw-fs,pdk-fs" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/go/linux-x86" name="platform/prebuilts/go/linux-x86" groups="linux,pdk,tradefed" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/gradle-plugin" name="platform/prebuilts/gradle-plugin" groups="pdk,pdk-cw-fs,pdk-fs" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/jdk/jdk21" name="platform/prebuilts/jdk/jdk21" groups="pdk,sysui-studio" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/jdk/jdk8" name="platform/prebuilts/jdk/jdk8" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/ktlint" name="platform/prebuilts/ktlint" groups="pdk,sysui-studio" clone-depth="1"/> -->
   <project path="prebuilts/manifest-merger" name="platform/prebuilts/manifest-merger" groups="pdk" clone-depth="1"/>
   <project path="prebuilts/maven_repo/bumptech" name="platform/prebuilts/maven_repo/bumptech" groups="pdk-cw-fs,pdk-fs" clone-depth="1"/>
-  <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk,sysui-studio" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/AdServices" name="platform/prebuilts/module_sdk/AdServices" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/AppSearch" name="platform/prebuilts/module_sdk/AppSearch" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/art" name="platform/prebuilts/module_sdk/art" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/Bluetooth" name="platform/prebuilts/module_sdk/Bluetooth" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/ConfigInfrastructure" name="platform/prebuilts/module_sdk/ConfigInfrastructure" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/Connectivity" name="platform/prebuilts/module_sdk/Connectivity" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/conscrypt" name="platform/prebuilts/module_sdk/conscrypt" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/CrashRecovery" name="platform/prebuilts/module_sdk/CrashRecovery" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/DeviceLock" name="platform/prebuilts/module_sdk/DeviceLock" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/HealthFitness" name="platform/prebuilts/module_sdk/HealthFitness" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/IPsec" name="platform/prebuilts/module_sdk/IPsec" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/Media" name="platform/prebuilts/module_sdk/Media" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/MediaProvider" name="platform/prebuilts/module_sdk/MediaProvider" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/Nfc" name="platform/prebuilts/module_sdk/Nfc" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/OnDevicePersonalization" name="platform/prebuilts/module_sdk/OnDevicePersonalization" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/Permission" name="platform/prebuilts/module_sdk/Permission" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/Profiling" name="platform/prebuilts/module_sdk/Profiling" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/RemoteKeyProvisioning" name="platform/prebuilts/module_sdk/RemoteKeyProvisioning" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/Scheduling" name="platform/prebuilts/module_sdk/Scheduling" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/SdkExtensions" name="platform/prebuilts/module_sdk/SdkExtensions" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/StatsD" name="platform/prebuilts/module_sdk/StatsD" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/Telephony" name="platform/prebuilts/module_sdk/Telephony" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/Uwb" name="platform/prebuilts/module_sdk/Uwb" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/module_sdk/Wifi" name="platform/prebuilts/module_sdk/Wifi" groups="pdk" clone-depth="1"/>
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk,sysui-studio" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/AdServices" name="platform/prebuilts/module_sdk/AdServices" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/AppSearch" name="platform/prebuilts/module_sdk/AppSearch" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/art" name="platform/prebuilts/module_sdk/art" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/Bluetooth" name="platform/prebuilts/module_sdk/Bluetooth" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/ConfigInfrastructure" name="platform/prebuilts/module_sdk/ConfigInfrastructure" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/Connectivity" name="platform/prebuilts/module_sdk/Connectivity" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/conscrypt" name="platform/prebuilts/module_sdk/conscrypt" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/CrashRecovery" name="platform/prebuilts/module_sdk/CrashRecovery" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/DeviceLock" name="platform/prebuilts/module_sdk/DeviceLock" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/HealthFitness" name="platform/prebuilts/module_sdk/HealthFitness" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/IPsec" name="platform/prebuilts/module_sdk/IPsec" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/Media" name="platform/prebuilts/module_sdk/Media" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/MediaProvider" name="platform/prebuilts/module_sdk/MediaProvider" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/Nfc" name="platform/prebuilts/module_sdk/Nfc" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/OnDevicePersonalization" name="platform/prebuilts/module_sdk/OnDevicePersonalization" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/Permission" name="platform/prebuilts/module_sdk/Permission" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/Profiling" name="platform/prebuilts/module_sdk/Profiling" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/RemoteKeyProvisioning" name="platform/prebuilts/module_sdk/RemoteKeyProvisioning" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/Scheduling" name="platform/prebuilts/module_sdk/Scheduling" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/SdkExtensions" name="platform/prebuilts/module_sdk/SdkExtensions" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/StatsD" name="platform/prebuilts/module_sdk/StatsD" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/Telephony" name="platform/prebuilts/module_sdk/Telephony" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/Uwb" name="platform/prebuilts/module_sdk/Uwb" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/module_sdk/Wifi" name="platform/prebuilts/module_sdk/Wifi" groups="pdk" clone-depth="1"/> -->
   <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/qemu-kernel" name="platform_prebuilts_qemu-kernel" groups="pdk" remote="grapheneos" clone-depth="1"/>
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/qemu-kernel" name="platform_prebuilts_qemu-kernel" groups="pdk" remote="grapheneos" clone-depth="1"/> -->
   <project path="prebuilts/r8" name="platform/prebuilts/r8" groups="pdk,sysui-studio" clone-depth="1"/>
-  <project path="prebuilts/remoteexecution-client" name="platform/prebuilts/remoteexecution-client" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/runtime" name="platform/prebuilts/runtime" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/rust" name="platform/prebuilts/rust" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,sysui-studio" clone-depth="1"/>
-  <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools,sysui-studio" clone-depth="1"/>
-  <project path="prebuilts/vndk/v30" name="platform/prebuilts/vndk/v30" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/vndk/v31" name="platform/prebuilts/vndk/v31" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/vndk/v32" name="platform/prebuilts/vndk/v32" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/vndk/v33" name="platform/prebuilts/vndk/v33" groups="pdk" clone-depth="1"/>
-  <project path="prebuilts/vndk/v34" name="platform/prebuilts/vndk/v34" groups="pdk" clone-depth="1"/>
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/remoteexecution-client" name="platform/prebuilts/remoteexecution-client" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/runtime" name="platform/prebuilts/runtime" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/rust" name="platform/prebuilts/rust" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,sysui-studio" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools,sysui-studio" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/vndk/v30" name="platform/prebuilts/vndk/v30" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/vndk/v31" name="platform/prebuilts/vndk/v31" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/vndk/v32" name="platform/prebuilts/vndk/v32" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/vndk/v33" name="platform/prebuilts/vndk/v33" groups="pdk" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="prebuilts/vndk/v34" name="platform/prebuilts/vndk/v34" groups="pdk" clone-depth="1"/> -->
   <project path="script" name="script" remote="grapheneos"/>
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs"/>
   <project path="system/apex" name="platform/system/apex" groups="pdk"/>
@@ -919,7 +919,7 @@
   <project path="system/core" name="platform_system_core" groups="pdk" remote="grapheneos" aosp-name="platform/system/core"/>
   <project path="system/cros-codecs" name="platform/system/cros-codecs" groups="pdk"/>
   <project path="system/dmesgd" name="platform/system/dmesgd" groups="pdk"/>
-  <project path="system/extras" name="platform_system_extras" groups="pdk" remote="grapheneos" aosp-name="platform/system/extras"/>
+  <!-- EXCLUDED FOR LITE: <project path="system/extras" name="platform_system_extras" groups="pdk" remote="grapheneos" aosp-name="platform/system/extras"/> -->
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk"/>
   <project path="system/gsid" name="platform/system/gsid" groups="pdk"/>
   <project path="system/hardware/interfaces" name="platform/system/hardware/interfaces" groups="pdk,sysui-studio"/>
@@ -971,23 +971,23 @@
   <project path="system/usb_info_tools" name="platform/system/usb_info_tools" groups="pdk"/>
   <project path="system/vold" name="platform_system_vold" groups="pdk" remote="grapheneos" aosp-name="platform/system/vold"/>
   <project path="system/zygote" name="platform/system/zygote" groups="pdk"/>
-  <project path="test/app_compat/csuite" name="platform/test/app_compat/csuite" groups="pdk"/>
-  <project path="test/catbox" name="platform/test/catbox" groups="pdk"/>
-  <project path="test/cts-root" name="platform/test/cts-root"/>
-  <project path="test/dittosuite" name="platform/test/dittosuite" groups="pdk"/>
-  <project path="test/mlts/benchmark" name="platform/test/mlts/benchmark" groups="pdk"/>
-  <project path="test/mlts/models" name="platform/test/mlts/models" groups="pdk"/>
-  <project path="test/mts" name="platform/test/mts"/>
-  <project path="test/robolectric-extensions" name="platform/test/robolectric-extensions" groups="pdk-cw-fs,pdk-fs,sysui-studio"/>
-  <project path="test/suite_harness" name="platform/test/suite_harness" groups="cts,pdk-cw-fs,pdk-fs"/>
-  <project path="test/vts" name="platform/test/vts" groups="vts,pdk"/>
-  <project path="test/vts-testcase/hal" name="platform/test/vts-testcase/hal" groups="vts,pdk"/>
-  <project path="test/vts-testcase/kernel" name="platform/test/vts-testcase/kernel" groups="vts,pdk"/>
-  <project path="test/vts-testcase/nbu" name="platform/test/vts-testcase/nbu" groups="vts,projectarch,pdk"/>
-  <project path="test/vts-testcase/performance" name="platform/test/vts-testcase/performance" groups="vts,projectarch,pdk"/>
-  <project path="test/vts-testcase/security" name="platform/test/vts-testcase/security" groups="vts,projectarch,pdk"/>
-  <project path="test/vts-testcase/vndk" name="platform/test/vts-testcase/vndk" groups="vts,pdk"/>
-  <project path="toolchain/pgo-profiles" name="toolchain/pgo-profiles" groups="pdk" clone-depth="1"/>
+  <!-- EXCLUDED FOR LITE: <project path="test/app_compat/csuite" name="platform/test/app_compat/csuite" groups="pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="test/catbox" name="platform/test/catbox" groups="pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="test/cts-root" name="platform/test/cts-root"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="test/dittosuite" name="platform/test/dittosuite" groups="pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="test/mlts/benchmark" name="platform/test/mlts/benchmark" groups="pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="test/mlts/models" name="platform/test/mlts/models" groups="pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="test/mts" name="platform/test/mts"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="test/robolectric-extensions" name="platform/test/robolectric-extensions" groups="pdk-cw-fs,pdk-fs,sysui-studio"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="test/suite_harness" name="platform/test/suite_harness" groups="cts,pdk-cw-fs,pdk-fs"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="test/vts" name="platform/test/vts" groups="vts,pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="test/vts-testcase/hal" name="platform/test/vts-testcase/hal" groups="vts,pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="test/vts-testcase/kernel" name="platform/test/vts-testcase/kernel" groups="vts,pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="test/vts-testcase/nbu" name="platform/test/vts-testcase/nbu" groups="vts,projectarch,pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="test/vts-testcase/performance" name="platform/test/vts-testcase/performance" groups="vts,projectarch,pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="test/vts-testcase/security" name="platform/test/vts-testcase/security" groups="vts,projectarch,pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="test/vts-testcase/vndk" name="platform/test/vts-testcase/vndk" groups="vts,pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="toolchain/pgo-profiles" name="toolchain/pgo-profiles" groups="pdk" clone-depth="1"/> -->
   <project path="tools/aadevtools" name="platform/tools/aadevtools" groups="pdk"/>
   <project path="tools/acloud" name="platform/tools/acloud" groups="tools,vts,projectarch,pdk,tradefed"/>
   <project path="tools/apifinder" name="platform/tools/apifinder" groups="pdk,tools"/>
@@ -998,25 +998,25 @@
   <project path="tools/carrier_settings" name="platform/tools/carrier_settings" groups="tools"/>
   <project path="tools/content_addressed_storage/prebuilts" name="platform/tools/content_addressed_storage/prebuilts" groups="pdk,tools" clone-depth="1"/>
   <project path="tools/currysrc" name="platform/tools/currysrc" groups="pdk"/>
-  <project path="tools/deviceinfra/prebuilts" name="platform/tools/deviceinfra/prebuilts" groups="pdk,tools" clone-depth="1"/>
-  <project path="tools/dexter" name="platform/tools/dexter" groups="tools,pdk-cw-fs,pdk-fs"/>
+  <!-- EXCLUDED FOR LITE: <project path="tools/deviceinfra/prebuilts" name="platform/tools/deviceinfra/prebuilts" groups="pdk,tools" clone-depth="1"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="tools/dexter" name="platform/tools/dexter" groups="tools,pdk-cw-fs,pdk-fs"/> -->
   <project path="tools/doc_generation" name="platform/tools/doc_generation" groups="tools,pdk"/>
   <project path="tools/external_updater" name="platform/tools/external_updater" groups="tools"/>
   <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="tools"/>
   <project path="tools/loganalysis" name="platform/tools/loganalysis" groups="nopresubmit,pdk,tradefed"/>
   <project path="tools/metalava" name="platform_tools_metalava" groups="pdk,tools" remote="grapheneos" aosp-name="platform/tools/metalava"/>
-  <project path="tools/ndkports" name="platform/tools/ndkports" groups="pdk"/>
-  <project path="tools/netsim" name="platform/tools/netsim" groups="pdk"/>
+  <!-- EXCLUDED FOR LITE: <project path="tools/ndkports" name="platform/tools/ndkports" groups="pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="tools/netsim" name="platform/tools/netsim" groups="pdk"/> -->
   <project path="tools/platform-compat" name="tools/platform-compat" groups="pdk-cw-fs,pdk-fs,pdk,sysui-studio"/>
   <project path="tools/repohooks" name="platform/tools/repohooks" groups="adt-infra,cts,developers,motodev,pdk,tools,tradefed,sysui-studio"/>
   <project path="tools/security" name="platform/tools/security" groups="pdk,tools"/>
-  <project path="tools/test/connectivity" name="platform/tools/test/connectivity" groups="pdk"/>
-  <project path="tools/test/mobly_extensions" name="platform/tools/test/mobly_extensions" groups="pdk"/>
-  <project path="tools/test/mobly_snippets" name="platform/tools/test/mobly_snippets" groups="pdk"/>
-  <project path="tools/test/openhst" name="platform/tools/test/openhst" groups="tools"/>
-  <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed"/>
-  <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed"/>
-  <project path="tools/tradefederation/prebuilts" name="platform/tools/tradefederation/prebuilts" groups="pdk,tradefed" clone-depth="1"/>
+  <!-- EXCLUDED FOR LITE: <project path="tools/test/connectivity" name="platform/tools/test/connectivity" groups="pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="tools/test/mobly_extensions" name="platform/tools/test/mobly_extensions" groups="pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="tools/test/mobly_snippets" name="platform/tools/test/mobly_snippets" groups="pdk"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="tools/test/openhst" name="platform/tools/test/openhst" groups="tools"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="tools/tradefederation/prebuilts" name="platform/tools/tradefederation/prebuilts" groups="pdk,tradefed" clone-depth="1"/> -->
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk"/>
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs"/>
   <project path="trusty/device/arm/generic-arm64" name="trusty/device/arm/generic-arm64" groups="trusty,pdk"/>
@@ -1046,6 +1046,7 @@
   <project path="trusty/vendor/google/aosp" name="trusty/vendor/google/aosp" groups="trusty,pdk">
     <copyfile src="lk_inc.mk" dest="lk_inc.mk"/>
   </project>
-  <project path="vendor/adevtool" name="adevtool" remote="grapheneos"/>
-  <project path="vendor/state" name="vendor_state" remote="grapheneos" clone-depth="1"/>
+  <!-- EXCLUDED FOR LITE: <project path="vendor/adevtool" name="adevtool" remote="grapheneos"/> -->
+  <!-- EXCLUDED FOR LITE: <project path="vendor/state" name="vendor_state" remote="grapheneos" clone-depth="1"/> -->
 </manifest>
+
