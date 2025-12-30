@@ -4,10 +4,16 @@
 <manifest>
   <remote name="grapheneos" fetch="https://github.com/GrapheneOS/" revision="refs/heads/17"/>
   <remote name="grapheneos-gitlab" fetch="https://gitlab.com/grapheneos/" revision="refs/heads/17"/>
+  <remote name="benzeneos" fetch="https://github.com/BenzeneOS/"/>
+  <remote name="benzeneos-blobs" fetch="https://git.amaanq.com/BenzeneOS/"/>
   <remote name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/"/>
   <default revision="refs/tags/android-17.0.0_r1" remote="aosp" sync-j="4"/>
   <superproject name="platform/superproject" remote="aosp" revision="android-17.0.0_r1"/>
   <contactinfo bugurl="go/repo-bug"/>
+  <project path="benzene-build" name="benzene-build" remote="benzeneos" revision="master">
+    <linkfile src="shell.nix" dest="shell.nix"/>
+    <linkfile src="graphene-env.nu" dest="graphene-env.nu"/>
+  </project>
   <project path="art" name="platform_art" groups="pdk" remote="grapheneos" aosp-name="platform/art"/>
   <project path="bionic" name="platform_bionic" groups="pdk" remote="grapheneos" aosp-name="platform/bionic"/>
   <project path="bootable/deprecated-ota" name="platform/bootable/deprecated-ota" groups="pdk-cw,pdk-arsp-ag-sot,pdk-arsp-common"/>
@@ -15,7 +21,7 @@
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="grapheneos" aosp-name="platform/bootable/recovery"/>
   <project path="branding" name="branding" remote="grapheneos"/>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed"/>
-  <project path="build/make" name="platform_build" groups="pdk,sysui-studio" remote="grapheneos" aosp-name="platform/build">
+  <project path="build/make" name="platform_build" groups="pdk,sysui-studio" remote="benzeneos" revision="17-benzene" aosp-name="platform/build">
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
     <linkfile src="core" dest="build/core"/>
@@ -25,7 +31,7 @@
   </project>
   <project path="build/pesto" name="platform/build/pesto" groups="pdk"/>
   <project path="build/release" name="platform_build_release" groups="pdk,tradefed,sysui-studio" remote="grapheneos" aosp-name="platform/build/release"/>
-  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed,sysui-studio" remote="grapheneos" aosp-name="platform/build/soong">
+  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed,sysui-studio" remote="benzeneos" revision="17-benzene" aosp-name="platform/build/soong">
     <linkfile src="root.bp" dest="Android.bp"/>
     <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
   </project>
@@ -47,24 +53,24 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk"/>
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk"/>
   <project path="device/google_car" name="device/google_car" groups="pdk"/>
-  <project path="device/google/akita-kernels/6.1" name="device_google_akita-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/bluejay-kernels/6.1" name="device_google_bluejay-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/caimito-kernels/6.1" name="device_google_caimito-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/comet-kernels/6.1" name="device_google_comet-kernels_6.1" remote="grapheneos" clone-depth="1"/>
+  <project path="device/google/akita-kernels/6.1" name="device_google_akita-kernels_6.1" remote="benzeneos" revision="17-benzene" clone-depth="1"/>
+  <project path="device/google/bluejay-kernels/6.1" name="device_google_bluejay-kernels_6.1" remote="benzeneos" revision="17-benzene" clone-depth="1"/>
+  <project path="device/google/caimito-kernels/6.1" name="device_google_caimito-kernels_6.1" remote="benzeneos" revision="17-benzene" clone-depth="1"/>
+  <project path="device/google/comet-kernels/6.1" name="device_google_comet-kernels_6.1" remote="benzeneos" revision="17-benzene" clone-depth="1"/>
   <project path="device/google/cuttlefish" name="device/google/cuttlefish" groups="device,pdk"/>
   <project path="device/google/cuttlefish_prebuilts" name="device/google/cuttlefish_prebuilts" groups="device,pdk" clone-depth="1"/>
   <project path="device/google/cuttlefish_vmm" name="device/google/cuttlefish_vmm" groups="device,pdk" clone-depth="1"/>
-  <project path="device/google/felix-kernels/6.1" name="device_google_felix-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/laguna-kernels/6.6" name="device_google_laguna-kernels_6.6" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/lynx-kernels/6.1" name="device_google_lynx-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/pantah-kernels/6.1" name="device_google_pantah-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/raviole-kernels/6.1" name="device_google_raviole-kernels_6.1" remote="grapheneos" clone-depth="1"/>
+  <project path="device/google/felix-kernels/6.1" name="device_google_felix-kernels_6.1" remote="benzeneos" revision="17-benzene" clone-depth="1"/>
+  <project path="device/google/laguna-kernels/6.6" name="device_google_laguna-kernels_6.6" remote="benzeneos" revision="17-benzene" clone-depth="1"/>
+  <project path="device/google/lynx-kernels/6.1" name="device_google_lynx-kernels_6.1" remote="benzeneos" revision="17-benzene" clone-depth="1"/>
+  <project path="device/google/pantah-kernels/6.1" name="device_google_pantah-kernels_6.1" remote="benzeneos" revision="17-benzene" clone-depth="1"/>
+  <project path="device/google/raviole-kernels/6.1" name="device_google_raviole-kernels_6.1" remote="benzeneos" revision="17-benzene" clone-depth="1"/>
   <project path="device/google/sdv" name="device/google/sdv" groups="swcar,pdk" clone-depth="1"/>
   <project path="device/google/sdv_display_safety" name="device/google/sdv_display_safety" groups="swcar,pdk" clone-depth="1"/>
-  <project path="device/google/shusky-kernels/6.1" name="device_google_shusky-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/stallion-kernels/6.1" name="device_google_stallion-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/tangorpro-kernels/6.1" name="device_google_tangorpro-kernels_6.1" remote="grapheneos" clone-depth="1"/>
-  <project path="device/google/tegu-kernels/6.1" name="device_google_tegu-kernels_6.1" remote="grapheneos" clone-depth="1"/>
+  <project path="device/google/shusky-kernels/6.1" name="device_google_shusky-kernels_6.1" remote="benzeneos" revision="17-benzene" clone-depth="1"/>
+  <project path="device/google/stallion-kernels/6.1" name="device_google_stallion-kernels_6.1" remote="benzeneos" revision="17-benzene" clone-depth="1"/>
+  <project path="device/google/tangorpro-kernels/6.1" name="device_google_tangorpro-kernels_6.1" remote="benzeneos" revision="17-benzene" clone-depth="1"/>
+  <project path="device/google/tegu-kernels/6.1" name="device_google_tegu-kernels_6.1" remote="benzeneos" revision="17-benzene" clone-depth="1"/>
   <project path="device/linaro/dragonboard" name="device/linaro/dragonboard" groups="device,dragonboard,pdk"/>
   <project path="device/linaro/dragonboard-kernel" name="device/linaro/dragonboard-kernel" groups="device,dragonboard,pdk" clone-depth="1"/>
   <project path="device/linaro/hikey" name="device/linaro/hikey" groups="device,hikey,pdk"/>
@@ -607,7 +613,7 @@
   <project path="external/uwb" name="platform/external/uwb" groups="pdk"/>
   <project path="external/v4l-utils" name="platform/external/v4l-utils" groups="pdk"/>
   <project path="external/v4l2_codec2" name="platform/external/v4l2_codec2" groups="pdk"/>
-  <project path="external/vanadium" name="platform_external_vanadium" remote="grapheneos-gitlab" clone-depth="1"/>
+  <project path="external/palladium" name="platform_external_palladium" remote="benzeneos-blobs" revision="master" clone-depth="1"/>
   <project path="external/vboot_reference" name="platform/external/vboot_reference" groups="pdk"/>
   <project path="external/virtio-media" name="platform/external/virtio-media" groups="pdk"/>
   <project path="external/vixl" name="platform/external/vixl" groups="pdk"/>
@@ -638,7 +644,7 @@
   <project path="external/zucchini" name="platform/external/zucchini" groups="pdk"/>
   <project path="external/zxing" name="platform/external/zxing" groups="pdk"/>
   <project path="frameworks/av" name="platform_frameworks_av" groups="pdk,sysui-studio" remote="grapheneos" aosp-name="platform/frameworks/av"/>
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="grapheneos" aosp-name="platform/frameworks/base"/>
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="benzeneos" revision="17-benzene" aosp-name="platform/frameworks/base"/>
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk"/>
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk"/>
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk"/>
@@ -673,6 +679,7 @@
   <project path="frameworks/proto_logging" name="platform/frameworks/proto_logging" groups="pdk-cw-fs,pdk-fs,sysui-studio"/>
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk"/>
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs"/>
+  <project path="hardware/benzeneos/battery" name="hardware_benzeneos_battery" remote="benzeneos" revision="master"/>
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk"/>
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan"/>
   <project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk"/>
@@ -757,6 +764,7 @@
   <project path="packages/apps/CarrierConfig2" name="platform_packages_apps_CarrierConfig2" groups="pdk-cw-fs,pdk-fs" remote="grapheneos"/>
   <project path="packages/apps/CellBroadcastReceiver" name="platform_packages_apps_CellBroadcastReceiver" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/CellBroadcastReceiver"/>
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs,pdk-fs"/>
+  <project path="packages/apps/Columbus" name="packages_apps_Columbus" remote="benzeneos" revision="master"/>
   <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/Contacts"/>
   <project path="packages/apps/ContactsPicker" name="platform/packages/apps/ContactsPicker" groups="pdk-fs"/>
   <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" groups="pdk-fs" remote="grapheneos"/>
@@ -772,7 +780,7 @@
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs"/>
   <project path="packages/apps/ImsServiceEntitlement" name="platform/packages/apps/ImsServiceEntitlement" groups="pdk-fs"/>
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs"/>
-  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="grapheneos" aosp-name="platform/packages/apps/Launcher3"/>
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="benzeneos" revision="17-benzene" aosp-name="platform/packages/apps/Launcher3"/>
   <project path="packages/apps/Login" name="platform/packages/apps/Login" groups="pdk-fs"/>
   <project path="packages/apps/LogViewer" name="platform_packages_apps_LogViewer" groups="pdk-fs" remote="grapheneos"/>
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs"/>
@@ -791,7 +799,7 @@
   <project path="packages/apps/SampleLocationAttribution" name="platform/packages/apps/SampleLocationAttribution" groups="pdk-fs"/>
   <project path="packages/apps/SecureElement" name="platform/packages/apps/SecureElement" groups="apps_se,pdk-fs,pdk-cw-fs"/>
   <project path="packages/apps/Seedvault" name="platform_packages_apps_Seedvault" remote="grapheneos"/>
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="grapheneos" aosp-name="platform/packages/apps/Settings"/>
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="benzeneos" revision="17-benzene" aosp-name="platform/packages/apps/Settings"/>
   <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/SettingsIntelligence"/>
   <project path="packages/apps/SetupWizard2" name="platform_packages_apps_SetupWizard2" remote="grapheneos"/>
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs"/>
@@ -807,7 +815,7 @@
   <project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings" groups="pdk-fs,pdk-cw-tvc"/>
   <project path="packages/apps/TvSystemUI" name="platform/packages/apps/TvSystemUI" groups="pdk-fs"/>
   <project path="packages/apps/UniversalMediaPlayer" name="platform/packages/apps/UniversalMediaPlayer"/>
-  <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="grapheneos"/>
+  <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="benzeneos" revision="17-benzene"/>
   <project path="packages/apps/VirtualGamepad" name="platform/packages/apps/VirtualGamepad" groups="pdk-fs"/>
   <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="grapheneos" aosp-name="platform/packages/apps/WallpaperPicker2"/>
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/inputmethods/LatinIME"/>
@@ -816,16 +824,16 @@
   <project path="packages/modules/AdServices" name="platform_packages_modules_AdServices" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="grapheneos" aosp-name="platform/packages/modules/AdServices"/>
   <project path="packages/modules/AppSearch" name="platform_packages_modules_AppSearch" groups="pdk" remote="grapheneos" aosp-name="platform/packages/modules/AppSearch"/>
   <project path="packages/modules/ArtPrebuilt" name="platform/packages/modules/ArtPrebuilt" groups="pdk" clone-depth="1"/>
-  <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" groups="pdk" remote="grapheneos" aosp-name="platform/packages/modules/Bluetooth"/>
+  <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" groups="pdk" remote="benzeneos" revision="17-benzene" aosp-name="platform/packages/modules/Bluetooth"/>
   <project path="packages/modules/CaptivePortalLogin" name="platform/packages/modules/CaptivePortalLogin" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/modules/CellBroadcastService" name="platform/packages/modules/CellBroadcastService" groups="pdk"/>
   <project path="packages/modules/common" name="platform/packages/modules/common" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/modules/ConfigInfrastructure" name="platform_packages_modules_ConfigInfrastructure" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/modules/ConfigInfrastructure"/>
-  <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/modules/Connectivity"/>
+  <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="benzeneos" revision="17-benzene" aosp-name="platform/packages/modules/Connectivity"/>
   <project path="packages/modules/CrashRecovery" name="platform/packages/modules/CrashRecovery" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/modules/desktop/Serviceability" name="platform/packages/modules/desktop/Serviceability" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/modules/DeviceLock" name="platform/packages/modules/DeviceLock" groups="pdk-cw-fs,pdk-fs"/>
-  <project path="packages/modules/DnsResolver" name="platform_packages_modules_DnsResolver" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/modules/DnsResolver"/>
+  <project path="packages/modules/DnsResolver" name="platform_packages_modules_DnsResolver" groups="pdk-cw-fs,pdk-fs" remote="benzeneos" revision="17" aosp-name="platform/packages/modules/DnsResolver"/>
   <project path="packages/modules/ExtServices" name="platform/packages/modules/ExtServices" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/modules/GenericBootstrappingArchitecture" name="platform/packages/modules/GenericBootstrappingArchitecture" groups="pdk"/>
   <project path="packages/modules/GeoTZ" name="platform/packages/modules/GeoTZ" groups="pdk-cw-fs,pdk-fs"/>
@@ -842,7 +850,7 @@
   <project path="packages/modules/Nfc" name="platform_packages_modules_Nfc" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/modules/Nfc"/>
   <project path="packages/modules/NpuManager" name="platform/packages/modules/NpuManager" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/modules/OnDevicePersonalization" name="platform/packages/modules/OnDevicePersonalization" groups="pdk-cw-fs,pdk-fs"/>
-  <project path="packages/modules/Permission" name="platform_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/modules/Permission"/>
+  <project path="packages/modules/Permission" name="platform_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="benzeneos" revision="17-benzene" aosp-name="platform/packages/modules/Permission"/>
   <project path="packages/modules/Profiling" name="platform/packages/modules/Profiling" groups="pdk"/>
   <project path="packages/modules/RemoteKeyProvisioning" name="platform_packages_modules_RemoteKeyProvisioning" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/modules/RemoteKeyProvisioning"/>
   <project path="packages/modules/RuntimeI18n" name="platform/packages/modules/RuntimeI18n" groups="pdk-cw-fs,pdk-fs"/>
@@ -866,7 +874,7 @@
   <project path="packages/providers/ContactsKeysProvider" name="platform/packages/providers/ContactsKeysProvider" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/providers/ContactsProvider" name="platform_packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/providers/ContactsProvider"/>
   <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/providers/DownloadProvider"/>
-  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="grapheneos" aosp-name="platform/packages/providers/MediaProvider"/>
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="benzeneos" revision="17-benzene" aosp-name="platform/packages/providers/MediaProvider"/>
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" groups="pdk-fs"/>
   <project path="packages/providers/TelephonyProvider" name="platform_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/providers/TelephonyProvider"/>
   <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" groups="pdk-fs"/>
@@ -1129,6 +1137,7 @@
   <project path="trusty/vendor/google/aosp" name="trusty/vendor/google/aosp" groups="trusty,pdk">
     <copyfile src="lk_inc.mk" dest="lk_inc.mk"/>
   </project>
-  <project path="vendor/adevtool" name="adevtool" remote="grapheneos"/>
+  <project path="vendor/adevtool" name="adevtool" remote="benzeneos" revision="17-benzene"/>
+  <project path="vendor/benzeneos/sounds" name="vendor_benzeneos_sounds" remote="benzeneos-blobs" revision="master"/>
   <project path="vendor/state" name="vendor_state" remote="grapheneos" clone-depth="1"/>
 </manifest>
