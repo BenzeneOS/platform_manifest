@@ -34,7 +34,7 @@
   <project name="device/linaro/hikey-kernel" revision="f836f3465d48dbb69412e22d5cb1ac3f69808971" upstream="refs/tags/android-16.0.0_r4" dest-branch="refs/tags/android-16.0.0_r4" groups="device,hikey,pdk" clone-depth="1"/>
   <project name="device/sample" revision="0b007c70cf80454cbd0d49d147aa367192cfe8ba" upstream="refs/tags/android-16.0.0_r4" dest-branch="refs/tags/android-16.0.0_r4" groups="pdk"/>
   <project name="device_common" path="device/common" remote="grapheneos" revision="1f5ba2671e4b04e3bd8899b3df2c5e30a894b35c" upstream="refs/tags/2026061602" dest-branch="refs/tags/2026061602" groups="pdk,pdk-cw-fs"/>
-  <project name="device_generic_goldfish" path="device/generic/goldfish" remote="grapheneos" revision="a0ba109b24de6691b3a63fc5c37e46432d819a11" upstream="refs/tags/2026061602" dest-branch="refs/tags/2026061602" groups="pdk"/>
+  <project name="device_generic_goldfish" path="device/generic/goldfish" remote="benzeneos" revision="16-qpr2-benzene" groups="pdk"/>
   <project name="device_google_akita-kernels_6.1" path="device/google/akita-kernels/6.1" remote="benzeneos" revision="16-qpr2-benzene" clone-depth="1"/>
   <project name="device_google_bluejay-kernels_6.1" path="device/google/bluejay-kernels/6.1" remote="benzeneos" revision="16-qpr2-benzene" clone-depth="1"/>
   <project name="device_google_caimito-kernels_6.1" path="device/google/caimito-kernels/6.1" remote="benzeneos" revision="16-qpr2-benzene" clone-depth="1"/>
