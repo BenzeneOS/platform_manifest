@@ -13,6 +13,7 @@
   <project path="benzene-build" name="benzene-build" remote="benzeneos" revision="master">
     <linkfile src="shell.nix" dest="shell.nix"/>
     <linkfile src="graphene-env.nu" dest="graphene-env.nu"/>
+    <linkfile src="apply-patches.nu" dest="apply-patches.nu"/>
   </project>
   <project path="art" name="platform_art" groups="pdk" remote="grapheneos" aosp-name="platform/art"/>
   <project path="bionic" name="platform_bionic" groups="pdk" remote="grapheneos" aosp-name="platform/bionic"/>
@@ -1139,6 +1140,7 @@
     <copyfile src="lk_inc.mk" dest="lk_inc.mk"/>
   </project>
   <project path="vendor/adevtool" name="adevtool" remote="benzeneos" revision="17-benzene"/>
+  <project path="vendor/benzeneos/patches" name="patches" remote="benzeneos-blobs" revision="main" groups="notdefault,benzene-patches"/>
   <project path="vendor/benzeneos/sounds" name="vendor_benzeneos_sounds" remote="benzeneos-blobs" revision="master"/>
   <project path="vendor/state" name="vendor_state" remote="grapheneos" clone-depth="1"/>
 </manifest>
