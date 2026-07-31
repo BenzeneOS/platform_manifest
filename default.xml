@@ -543,6 +543,7 @@
   <project path="external/rust/crates/vhost-device-vsock" name="platform/external/rust/crates/vhost-device-vsock" groups="pdk"/>
   <project path="external/rust/cros-libva" name="platform/external/rust/cros-libva" groups="pdk"/>
   <project path="external/rust/cxx" name="platform/external/rust/cxx" groups="pdk"/>
+  <project path="external/rust/pushcompat" name="pushcompat" groups="pdk-fs" remote="benzeneos" revision="master"/>
   <project path="external/rust/ninja-to-soong" name="platform/external/rust/ninja-to-soong" groups="pdk"/>
   <project path="external/rust/pica" name="platform/external/rust/pica" groups="pdk"/>
   <project path="external/rust/rutabaga_gfx" name="platform/external/rust/rutabaga_gfx" groups="pdk"/>
