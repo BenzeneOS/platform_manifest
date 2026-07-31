@@ -535,6 +535,7 @@
   <project path="external/rootdev" name="platform/external/rootdev" groups="pdk"/>
   <project path="external/rust/android-crates-io" name="platform/external/rust/android-crates-io" groups="pdk"/>
   <project path="external/rust/autocxx" name="platform/external/rust/autocxx" groups="pdk"/>
+  <project path="external/rust/benzeneos-crates" name="platform_external_rust_benzeneos-crates" groups="pdk-fs" remote="benzeneos" revision="17-benzene"/>
   <project path="external/rust/beto-rust" name="platform/external/rust/beto-rust" groups="pdk"/>
   <project path="external/rust/crabbyavif" name="platform/external/rust/crabbyavif" groups="pdk"/>
   <project path="external/rust/crates/openssl" name="platform/external/rust/crates/openssl" groups="pdk"/>
