@@ -12,6 +12,9 @@
   <contactinfo bugurl="go/repo-bug"/>
   <project path="benzene-build" name="benzene-build" remote="benzeneos" revision="master">
     <linkfile src="shell.nix" dest="shell.nix"/>
+    <linkfile src="android-env.nix" dest="android-env.nix"/>
+    <linkfile src="build-env-common.nix" dest="build-env-common.nix"/>
+    <linkfile src="benzene-rbe.json" dest="benzene-rbe.json"/>
     <linkfile src="graphene-env.nu" dest="graphene-env.nu"/>
     <linkfile src="apply-patches.nu" dest="apply-patches.nu"/>
   </project>
