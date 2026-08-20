@@ -666,7 +666,7 @@
   <project path="frameworks/libs/systemui" name="platform_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="grapheneos" aosp-name="platform/frameworks/libs/systemui"/>
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs"/>
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs"/>
-  <project path="frameworks/native" name="platform_frameworks_native" groups="pdk,sysui-studio" remote="grapheneos" aosp-name="platform/frameworks/native"/>
+  <project path="frameworks/native" name="platform_frameworks_native" groups="pdk,sysui-studio" remote="benzeneos" revision="17-benzene" aosp-name="platform/frameworks/native"/>
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs"/>
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs"/>
   <project path="frameworks/opt/car/services" name="platform/frameworks/opt/car/services" groups="pdk-cw-fs,pdk-fs"/>
@@ -796,6 +796,7 @@
   <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="pdk-fs"/>
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" groups="pdk-fs"/>
   <project path="packages/apps/NetworkLocation" name="platform_packages_apps_NetworkLocation" groups="pdk-fs" remote="grapheneos"/>
+  <project path="packages/apps/Observatory" name="Observatory" groups="pdk-fs" remote="benzeneos" revision="17-benzene"/>
   <project path="packages/apps/OnDeviceAppPrediction" name="platform/packages/apps/OnDeviceAppPrediction" groups="pdk-fs"/>
   <project path="packages/apps/PersonalContext" name="platform/packages/apps/PersonalContext" groups="pdk-fs,sysui-studio"/>
   <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" groups="pdk-cw-fs,pdk-fs"/>
@@ -980,8 +981,8 @@
   <project path="system/acpi/bert_collector" name="platform/system/acpi/bert_collector" groups="pdk"/>
   <project path="system/apex" name="platform/system/apex" groups="pdk"/>
   <project path="system/authgraph" name="platform/system/authgraph" groups="pdk"/>
-  <project path="system/bpf" name="platform/system/bpf" groups="pdk"/>
-  <project path="system/bpfprogs" name="platform/system/bpfprogs" groups="pdk"/>
+  <project path="system/bpf" name="platform_system_bpf" groups="pdk" remote="benzeneos" revision="17-benzene" aosp-name="platform/system/bpf"/>
+  <project path="system/bpfprogs" name="platform_system_bpfprogs" groups="pdk" remote="benzeneos" revision="17-benzene" aosp-name="platform/system/bpfprogs"/>
   <project path="system/ca-certificates" name="platform_system_ca-certificates" groups="pdk" remote="grapheneos" aosp-name="platform/system/ca-certificates"/>
   <project path="system/chre" name="platform/system/chre" groups="pdk"/>
   <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk"/>
