@@ -797,6 +797,7 @@
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" groups="pdk-fs"/>
   <project path="packages/apps/NetworkLocation" name="platform_packages_apps_NetworkLocation" groups="pdk-fs" remote="grapheneos"/>
   <project path="packages/apps/Observatory" name="Observatory" groups="pdk-fs" remote="benzeneos" revision="17-benzene"/>
+  <project path="packages/apps/NowPlaying" name="platform_packages_apps_NowPlaying" groups="pdk-fs" remote="benzeneos" revision="master"/>
   <project path="packages/apps/OnDeviceAppPrediction" name="platform/packages/apps/OnDeviceAppPrediction" groups="pdk-fs"/>
   <project path="packages/apps/PersonalContext" name="platform/packages/apps/PersonalContext" groups="pdk-fs,sysui-studio"/>
   <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" groups="pdk-cw-fs,pdk-fs"/>
