@@ -6,6 +6,7 @@
   <remote name="grapheneos-gitlab" fetch="https://gitlab.com/grapheneos/" revision="refs/heads/17"/>
   <remote name="benzeneos" fetch="https://github.com/BenzeneOS/"/>
   <remote name="benzeneos-blobs" fetch="https://git.amaanq.com/BenzeneOS/"/>
+  <remote name="benzeneos-ssh" fetch="ssh://git@github.com/BenzeneOS/"/>
   <remote name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/"/>
   <default revision="refs/tags/android-17.0.0_r1" remote="aosp" sync-j="4"/>
   <superproject name="platform/superproject" remote="aosp" revision="android-17.0.0_r1"/>
@@ -897,7 +898,7 @@
   <project path="packages/services/CrossDeviceSync" name="platform/packages/services/CrossDeviceSync" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/services/DeviceAsWebcam" name="platform/packages/services/DeviceAsWebcam" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/services/display_safety" name="platform/packages/services/display_safety" groups="swcar,pdk"/>
-  <project path="packages/services/DroidfoodAttestationFixer" name="platform/packages/services/DroidfoodAttestationFixer" groups="pdk-cw-fs,pdk-fs"/>
+  <project path="packages/services/DroidfoodAttestationFixer" name="mystic-attestationfixer" groups="notdefault,mystic" remote="benzeneos-ssh" revision="main" sync-s="true"/>
   <project path="packages/services/Iwlan" name="platform/packages/services/Iwlan" groups="pdk-cw-fs,pdk-fs"/>
   <project path="packages/services/Mms" name="platform_packages_services_Mms" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/services/Mms"/>
   <project path="packages/services/Mtp" name="platform/packages/services/Mtp" groups="pdk-cw-fs,pdk-fs"/>
