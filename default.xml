@@ -5,6 +5,7 @@
   <remote name="grapheneos-gitlab" fetch="https://gitlab.com/grapheneos/" revision="refs/tags/2026061602"/>
   <remote name="benzeneos" fetch="https://github.com/BenzeneOS/"/>
   <remote name="benzeneos-blobs" fetch="https://git.amaanq.com/BenzeneOS/"/>
+  <remote name="benzeneos-ssh" fetch="ssh://git@github.com/BenzeneOS/"/>
   
   <default remote="aosp" revision="refs/tags/android-16.0.0_r4" sync-j="4"/>
   
@@ -1062,6 +1063,7 @@
     <copyfile src="lk_inc.mk" dest="lk_inc.mk"/>
   </project>
   <project name="vendor_benzeneos_sounds" path="vendor/benzeneos/sounds" remote="benzeneos-blobs" revision="master"/>
+  <project name="mystic-attestationfixer" path="vendor/mystic/attestationfixer" remote="benzeneos-ssh" revision="main" groups="notdefault,mystic" sync-s="true"/>
   <project name="vendor_state" path="vendor/state" remote="grapheneos" revision="b34bb41b09dae4f40df77b73cb1d1cdf5c16e575" upstream="refs/tags/2026061602" dest-branch="refs/tags/2026061602" clone-depth="1"/>
   
   <superproject name="platform/superproject" revision="android-16.0.0_r4"/>
